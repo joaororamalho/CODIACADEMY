@@ -1,0 +1,15 @@
+h1 {
+    color: blue;
+    background: green;
+}
+
+p {
+    font-size: 18px;
+    color: purple;
+}
+
+#texto2 {
+    color: green;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+}
