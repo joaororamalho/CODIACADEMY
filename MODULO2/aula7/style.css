@@ -1,0 +1,14 @@
+body {
+    font-size: 30px;
+}
+
+p {
+    font-size: 2em;
+    font-family: oswald;
+}
+
+.key {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
