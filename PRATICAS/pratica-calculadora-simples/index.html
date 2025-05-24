@@ -13,12 +13,13 @@
     <input type="number" id="num2" placeholder="Número 2">
 
     <div>
-        <button id="add">Adicionar</button>
-        <button id="substract">Subtrair</button>
-        <button id="multiply">Multiplicar</button>
-        <button id="divide">Dividir</button>
+        <button id="add" onclick="calcular('+')">Adicionar</button>
+        <button id="substract" onclick="calcular('-')">Subtrair</button>
+        <button id="multiply" onclick="calcular('*')">Multiplicar</button>
+        <button id="divide" onclick="calcular('/')">Dividir</button>
     </div>
 
+    <h2>Resultado: <span id="result">0</span></h2>
 
     <script src="script.js"></script>
 </body>
