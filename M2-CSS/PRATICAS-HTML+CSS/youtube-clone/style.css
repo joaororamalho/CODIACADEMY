@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 33, 33, 0.98);
+  z-index: 1;
+  position: relative;
+}
+
+i {
+  cursor: pointer;
+  color: white;
+}
+
+.navbar {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 55px;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 5;
+}
+
+.navbar .logo,
+.navbar .search,
+.navbar .icons {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo i {
+  font-size: 24px;
+  margin: 0 20px 0 10px;
+}
+
+.navbar .logo img {
+  width: 100px;
+  cursor: pointer;
+}
+
+.navbar .search {
+  height: 30px;
+}
+
+.navbar .search input {
+  width: 570px;
+  height: 100%;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid gray;
+  border-radius: 2px;
+  outline: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.navbar .search input:focus {
+  border-color: rgb(32, 32, 223);
+}
+
+.navbar .search .searchbtn {
+  width: 50px;
+  height: 100%;
+  background: gray;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 1px 1px 0;
+}
+
+.navbar .search .searchbtn i {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar .icons i {
+  margin-right: 25px;
+  font-size: 25px;
+}
+.navbar .icons .notification {
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar .icons .notification span[data-count]:after {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 15px;
+  top: -8px;
+  content: attr(data-count);
+  font-size: 14px;
+  padding: 2px;
+  border-radius: 50%;
+  color: white;
+  background: #d11811;
+  text-align: center;
+}
+
+.navbar .icons img {
+  width: 35px;
+  cursor: pointer;
+  margin-right: 10px;
+}
